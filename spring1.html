@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/spring.css" type="text/css">
+		<title>四季诗画——春</title>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    	<script type="text/javascript">
+        	$(function(){
+    	  		$("#question").click(function(){
+    		 	 	$(".msgInfo").fadeIn(1000);
+    	  		})
+    	  		$(".c1").click(function(){
+    	  			$("#cuowu").show(1000);
+    	  		})
+    	  		$(".c2").click(function(){
+    	  			$("#cuowu").show(1000);
+    	  		})
+    	  		$(".c3").click(function(){
+    	  			$("#zhengque").show(1000);
+    	  		})
+    	  		$(".c4").click(function(){
+    	  			$("#cuowu").show(1000);
+    	  		})
+    	  		$("#guize").click(function(){
+    		 	 	$(".msgInfo").fadeOut(1000);
+    		 	 	$(".guize").fadeIn(500);
+    	  		})
+    	  		$("#fanhui").click(function(){
+    	  			$(".guize").fadeOut(500);
+    	  		})
+    	  		
+      		})
+    	</script>
+		<style>	
+			#main {							
+				width: 100%;
+				height: 100%;
+				min-width: 500px;
+				z-index: -10;
+				zoom: 1;				
+				background-image: url("res/spring1.jpg");
+				background-repeat:no-repeat;
+				background-size:100% 100%;
+				background-position: center 0;
+			}	
+		</style>
+	</head>
+
+	<body>
+		<div id="main">
+			<!--菜单按钮-->
+			<a href="https://fanhua113.github.io/ex/ex/ex/">
+    			<img src="res/返回.png" width="75" height="70"
+    				style="position: absolute; left: 60px; top: 20px;">
+   			</a>
+   			<a id="guize">
+   				<img src="res/规则.png" width="80" height="75" 
+   					style="position: absolute; right: 440px;top: 20px;">
+   			</a>
+   			<a href="">
+   				<img src="res/音乐.png" width="75" height="65" 
+   					style="position: absolute; right: 330px;top: 20px;">
+   			</a>
+   			<a href="">
+   				<img src="res/背包.png" width="75" height="65" 
+   					style="position: absolute; right: 210px;top: 20px;">
+   			</a>
+   			<a href="">
+   				<img src="res/分享.png" width="85" height="70" 
+   					style="position: absolute; right: 80px;top: 20px;">
+   			</a>
+   			<!--两人的对话-->
+			<ul id="dialogue">
+				<li>
+					<div class="content">
+						<p>春天的景色真美啊！</p>
+						<img src="res/dialogue.png" />
+						
+					</div>
+				</li>
+				<li>
+					<div class="content">
+						<p>爸爸！看我骑在牛上诶！</p>
+						<img src="res/dialogue.png" />
+					</div>
+				</li>
+			</ul>
+			<!--点击答题-->
+			<ul id="question">
+				<li>
+					<a>进行答题</a>
+				</li>
+			</ul>
+			<section class="msgInfo" style="display:none;">
+      			<div>
+      				<img src="res/spring题目.png" />
+      				<ul class="choose">
+						<li>
+							<a class="c1">
+								<img src="res/小圆标.png" />
+							</a>
+						</li>
+						<li>
+							<a class="c2">
+								<img src="res/小圆标.png" />
+							</a>
+						</li>
+						<li>
+							<a class="c3">
+								<img src="res/小圆标.png" />
+							</a>
+						</li>
+						<li>
+							<a class="c4">
+								<img src="res/小圆标.png" />
+							</a>
+						</li>
+					</ul>
+					<img src="res/回答错误.png" id="cuowu" 
+						style="display:none;"/>
+					<img src="res/回答正确.png" id="zhengque" 
+						style="display:none;"/>
+     			</div>
+     		
+    		</section>
+    		
+    		<section class="card">
+    			<img src="res/重新答题.png" id="chongxin"
+						style="display:none;"/>
+				<img src="res/获得卡片.png" id="huode" 
+						style="display:none;"/>
+    		</section>
+    		<!--规则按钮-->
+			<section class="guize" style="display:none;">
+				<img src="res/规则图.png"/>
+				<img src="res/规则返回.png"  id="fanhui"/>
+			</section>
+		</div>
+		
+	</body>
+</html>
