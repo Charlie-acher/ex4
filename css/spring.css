@@ -6,8 +6,8 @@ html,body {
 }
 #dialogue{
 	position: absolute;
-	top: 500px;
-	left: 80px;
+	top: 61vh;
+	left: 5vw;
 	display: flex;
 }
 #dialogue li{
@@ -130,7 +130,7 @@ html,body {
 }*/
 /*答题界面*/
 .msgInfo img{
-    width:700px;
+    width:50vw;
     position:absolute;
     left:50%;
     top:50%;
@@ -139,21 +139,21 @@ html,body {
 }
 .msgInfo .choose{
 	position: absolute;
-	top: 360px;
-	left: 500px;
+	top: 43.2vh;
+	left: 32.7vw;
 }
 .msgInfo .choose img{
 	position: relative;
-	width: 25px;
-	height: 27px;
-	margin: 5px 0;
+	width: 1.8vw;
+	height: 3.3vh;
+	margin: 0.8vh 0;
 	box-shadow: none;
 }
 .msgInfo .choose li{
 	list-style: none;
 }
 .guize img{
-	width:700px;
+	width:50vw;
     position:absolute;
     left:50%;
     top:50%;
@@ -182,3 +182,4 @@ html,body {
 	top: 535px;
 	box-shadow: none;
 }*/
+
